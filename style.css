@@ -1,4 +1,4 @@
-html * {
+* {
     font-family: 'Work Sans', sans-serif;
 } 
     
@@ -9,11 +9,10 @@ li {
 
 li a {
     display: block;
-    
 }
 
 button {
-    font-size: 14px;
+    font-size: 12px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -21,15 +20,16 @@ button {
 } 
 
 input {
-    display: auto;
-    margin: auto;
-}
-
-img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-  
+    width: 20%;
+}
 
-
-    
+img {
+    margin: auto;
+    padding: 30px 0 30px 0;
+    width: 20em;
+    display: block;
+    clear: both;
+}
