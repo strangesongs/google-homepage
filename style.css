@@ -1,0 +1,36 @@
+html * {
+    font-family: 'Work Sans', sans-serif;
+} 
+    
+li {
+    display: inline;
+    padding: 14px;
+}
+
+li a {
+    display: block;
+    
+}
+
+button {
+    font-size: 14px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 14px;
+} 
+
+.search {
+    display: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  
+
+
+    
