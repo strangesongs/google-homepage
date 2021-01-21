@@ -1,40 +1,97 @@
-* {
-    font-family: "Work Sans", sans-serif;
-  }
-
-  #header {
-      border: 3px solid black;
-  }
-
-  #body {
-        margin: auto;
-        width: 50%;
-        border: 3px solid green;
-        padding: 10px;
-        align-items: center;
-        justify-content: center;
-        display: block;
-  }
-
-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+html {
+    height: 100%;
+    min-height: 100%;
 }
 
-input {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+#navbar {
+    display: grid;
+    grid-template-columns: 50px 50px 1fr 50px 50px 50px 50px;
+    grid-template-rows: 50px;
+    grid-template-areas: 
+    "about store . gmail image menu-button sign-in";
 }
 
-#search-buttons {
-    justify-content:center;
-    align-items:center
-    display: block;
-    text-align: center;
-  }
+a {
+    text-decoration: none;
+    color: rgb(211, 211, 211);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
 
-  #footer {
-      border: 3px solid black;
-  }
+#about {
+    grid-area: about;
+    justify-self: center;
+    align-self: center;
+}
+
+#store {
+    grid-area: store;
+    justify-self: center;
+    align-self: center;
+}
+
+#gmail {
+    grid-area: gmail;
+    justify-self: center;
+    align-self: center;
+}
+
+#image {
+    grid-area: image;
+    justify-self: center;
+    align-self: center;
+} 
+
+#menu-button {
+    grid-area: menu-button;
+    justify-self: center;
+    align-self:center;
+}
+
+#sign-in {
+    grid-area: sign-in;
+    justify-self: center;
+    align-self:center;
+}
+
+#main {
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 250px 70px 70px 250px;
+    grid-template-areas:
+    ". logo ."
+    ". search ."
+    ". flexbox ."
+    ". google-text ."
+
+}
+
+#logo {
+    grid-area: logo;
+    justify-self: center;
+    align-self: end;
+}
+
+#search {
+    grid-area: search;
+    height: 30px;
+    align-self: center;
+
+}
+    
+#flexbox {
+    display: flexbox;
+    grid-area: flexbox;
+}
+#google-search {
+    grid-area: google-search;
+}
+
+#feeling-lucky {
+    grid-area: feeling-lucky;
+}
+
+#google-text {
+    grid-area: google-text;
+}
