@@ -6,7 +6,7 @@ html {
 /*Navbar CSS*/
 #navbar {
     display: grid;
-    grid-template-columns: 70px 70px 1fr 70px 70px 70px;
+    grid-template-columns: 65px 65px 1fr 65px 65px 65px;
     grid-template-rows: 50px;
     grid-template-areas: 
     "about store . gmail image menu-button sign-in";
@@ -61,10 +61,14 @@ a:hover {
     grid-area: sign-in;
     justify-self: center;
     align-self:center;
-    background-color: rgb(100, 100, 247)
-    height: 30px;
-    weight: 70px;
-    border: 1px
+    border: 2px;
+    background-color: #4683ea;
+    color:white;
+    padding: 6px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    border-color: #4683ea;
+    border-radius: 2px;
 }
 /*Main CSS*/
 #main {
@@ -90,15 +94,18 @@ a:hover {
     grid-area: search;
     height: 35px;
     align-self: center;
-    width: 90%;
+    width: 80%;
     justify-self: center;
-    border: 1px solid #5F6368;
+    border: 1px solid #dbdbdb;
     border-radius: 30px;
-    color: #5F6368;
+    color: ##ffffff;
+    font-size: 16px;
+    text-indent: 30px;
     
 }
 #search:hover {
-    box-shadow: 1px 1px 2px 2px #5F6368;
+    box-shadow: 0 1px 1px rgba(0,0,0,.1);
+    outline: none;
 }
     
 #flexbox {
@@ -109,20 +116,23 @@ a:hover {
 }
 
 #google-search {
-    border: none;
-    font-size: 16px;
-    color: #5F6368;
+    font-size: 15px;
+    color: #3c4043;
     padding: 8px 16px 8px 16px;
-    margin-right: 25px;
-    border-radius: 3px;
+    margin-right: 20px;
+    border-radius: 4px;
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
 }   
 
 #feeling-lucky {
-    border: none;
-    font-size: 16px;
-    color: #5F6368;
+    font-size: 15px;
+    color: #3c4043;
     padding: 8px;
     margin-left: 4px;
+    border-radius: 4px;
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
 }
 
 #google-search:hover {
@@ -140,6 +150,8 @@ a:hover {
 
 #footer {
     position: absolute;
+    border-top: 1px solid;
+    background: #f2f2f2;
     bottom: 0;
     left: 0;
     right: 0;
@@ -166,6 +178,7 @@ a:hover {
     grid-area: how-search-works;
     justify-self: center;
     align-self: center;
+    white-space: nowrap;
 }
 
 #carbon {
