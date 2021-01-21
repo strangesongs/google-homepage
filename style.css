@@ -3,19 +3,28 @@ html {
     min-height: 100%;
 }
 
+/*Navbar CSS*/
 #navbar {
     display: grid;
-    grid-template-columns: 50px 50px 1fr 50px 50px 50px 50px;
+    grid-template-columns: 70px 70px 1fr 70px 70px 70px;
     grid-template-rows: 50px;
     grid-template-areas: 
     "about store . gmail image menu-button sign-in";
 }
 
-a {
+a,  p {
     text-decoration: none;
-    color: rgb(211, 211, 211);
+    color: rgb(0,0,0,0.87);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 13px;
+}
+
+p {
+    justify-self: center;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 #about {
@@ -52,8 +61,12 @@ a {
     grid-area: sign-in;
     justify-self: center;
     align-self:center;
+    background-color: rgb(100, 100, 247)
+    height: 30px;
+    weight: 70px;
+    border: 1px
 }
-
+/*Main CSS*/
 #main {
     
     display: grid;
@@ -63,7 +76,7 @@ a {
     ". logo ."
     ". search ."
     ". flexbox ."
-    ". google-text ."
+    ". google-text .";
 
 }
 
@@ -75,23 +88,105 @@ a {
 
 #search {
     grid-area: search;
-    height: 30px;
+    height: 35px;
     align-self: center;
-
+    width: 90%;
+    justify-self: center;
+    border: 1px solid #5F6368;
+    border-radius: 30px;
+    color: #5F6368;
+    
+}
+#search:hover {
+    box-shadow: 1px 1px 2px 2px #5F6368;
 }
     
 #flexbox {
     display: flexbox;
     grid-area: flexbox;
-}
-#google-search {
-    grid-area: google-search;
+    justify-self: center;
+    align-self:center;
 }
 
+#google-search {
+    border: none;
+    font-size: 16px;
+    color: #5F6368;
+    padding: 8px 16px 8px 16px;
+    margin-right: 25px;
+    border-radius: 3px;
+}   
+
 #feeling-lucky {
-    grid-area: feeling-lucky;
+    border: none;
+    font-size: 16px;
+    color: #5F6368;
+    padding: 8px;
+    margin-left: 4px;
+}
+
+#google-search:hover {
+    border: 1px solid grey;
+}
+
+#feeling-lucky:hover {
+    border: 1px solid grey;
 }
 
 #google-text {
     grid-area: google-text;
+}
+/*Footer CSS*/
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: grid;
+    grid-template-columns: 100px 100px 100px 1fr 90px 90px 90px;
+    grid-template-rows: 50px;
+    grid-template-areas: 
+    "ads business how-search-works carbon privacy terms settings";
+}
+
+#ads {
+    grid-area: ads;
+    justify-self: center;
+    align-self: center;
+}
+
+#business {
+    grid-area: business;
+    justify-self: center;
+    align-self: center;
+}
+
+#how-search-works {
+    grid-area: how-search-works;
+    justify-self: center;
+    align-self: center;
+}
+
+#carbon {
+    grid-area: carbon;
+    justify-self: center;
+    align-self: center;
+}
+#privacy{
+    grid-area: privacy;
+    justify-self: center;
+    align-self: center;
+}
+
+#terms{
+    grid-area: terms;
+    justify-self: center;
+    align-self: center;
+}
+
+#settings {
+    grid-area: settings;
+    justify-self: center;
+    align-self: center;
 }
